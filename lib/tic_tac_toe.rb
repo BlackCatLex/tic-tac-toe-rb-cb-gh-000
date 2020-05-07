@@ -98,12 +98,16 @@ def turn(board)
     user_choice = input_to_index(gets.strip)
   end
   move(board, user_choice, current_player(board))
+<<<<<<< HEAD
   display_board(board)
+=======
+>>>>>>> ccc925b4d897e52fd6a6a88ba80c91f2077f75d5
   board
 end
 
 # Define your play method below
 def play(board)
+<<<<<<< HEAD
     until over?(board) || draw?(board)
       board = turn(board)
     end
@@ -113,6 +117,16 @@ def play(board)
     else
       puts "Cat's Game!"
     end
+=======
+  9.times do
+    if over?(board)
+      winner(board)
+      break
+    else
+      turn(board)
+    end
+  end
+>>>>>>> ccc925b4d897e52fd6a6a88ba80c91f2077f75d5
 end
 
 board = ["X", "X", "X", " ", " ", " ", " ", " ", " "]
